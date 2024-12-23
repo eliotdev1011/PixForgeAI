@@ -1,0 +1,1569 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>PixForge AI &#8211; Lower the entry to game development utilizing NLP, AI and generation algorithms.</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Genbox &raquo; Feed" href="https://genbox.ai/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Genbox &raquo; Comments Feed" href="https://genbox.ai/comments/feed/" />
+<link rel='stylesheet' id='blocksy-dynamic-global-css' href='https://genbox.ai/wp-content/uploads/blocksy/css/global.css?ver=51244' media='all' />
+<link rel='stylesheet' id='bdt-uikit-css' href='https://genbox.ai/wp-content/plugins/bdthemes-element-pack/assets/css/bdt-uikit.css?ver=3.17.11' media='all' />
+<link rel='stylesheet' id='ep-helper-css' href='https://genbox.ai/wp-content/plugins/bdthemes-element-pack/assets/css/ep-helper.css?ver=7.7.2' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--palette-color-1: var(--theme-palette-color-1, #2872fa);--wp--preset--color--palette-color-2: var(--theme-palette-color-2, #1559ed);--wp--preset--color--palette-color-3: var(--theme-palette-color-3, #3A4F66);--wp--preset--color--palette-color-4: var(--theme-palette-color-4, #192a3d);--wp--preset--color--palette-color-5: var(--theme-palette-color-5, #e1e8ed);--wp--preset--color--palette-color-6: var(--theme-palette-color-6, #f2f5f7);--wp--preset--color--palette-color-7: var(--theme-palette-color-7, #FAFBFC);--wp--preset--color--palette-color-8: var(--theme-palette-color-8, #ffffff);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--juicy-peach: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);--wp--preset--gradient--young-passion: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);--wp--preset--gradient--true-sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);--wp--preset--gradient--morpheus-den: linear-gradient(to top, #30cfd0 0%, #330867 100%);--wp--preset--gradient--plum-plate: linear-gradient(135deg, #667eea 0%, #764ba2 100%);--wp--preset--gradient--aqua-splash: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);--wp--preset--gradient--love-kiss: linear-gradient(to top, #ff0844 0%, #ffb199 100%);--wp--preset--gradient--new-retrowave: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);--wp--preset--gradient--plum-bath: linear-gradient(to top, #cc208e 0%, #6713d2 100%);--wp--preset--gradient--high-flight: linear-gradient(to right, #0acffe 0%, #495aff 100%);--wp--preset--gradient--teen-party: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);--wp--preset--gradient--fabled-sunset: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);--wp--preset--gradient--arielle-smile: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);--wp--preset--gradient--itmeo-branding: linear-gradient(180deg, #2af598 0%, #009efd 100%);--wp--preset--gradient--deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);--wp--preset--gradient--strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);--wp--preset--gradient--sweet-period: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);--wp--preset--gradient--purple-division: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);--wp--preset--gradient--cold-evening: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);--wp--preset--gradient--mountain-rock: linear-gradient(to right, #868f96 0%, #596164 100%);--wp--preset--gradient--desert-hump: linear-gradient(to top, #c79081 0%, #dfa579 100%);--wp--preset--gradient--ethernal-constance: linear-gradient(to top, #09203f 0%, #537895 100%);--wp--preset--gradient--happy-memories: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);--wp--preset--gradient--grown-early: linear-gradient(to top, #0ba360 0%, #3cba92 100%);--wp--preset--gradient--morning-salad: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);--wp--preset--gradient--night-call: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);--wp--preset--gradient--mind-crawl: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);--wp--preset--gradient--angel-care: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);--wp--preset--gradient--juicy-cake: linear-gradient(to top, #e14fad 0%, #f9d423 100%);--wp--preset--gradient--rich-metal: linear-gradient(to right, #d7d2cc 0%, #304352 100%);--wp--preset--gradient--mole-hall: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);--wp--preset--gradient--cloudy-knoxville: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);--wp--preset--gradient--soft-grass: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);--wp--preset--gradient--saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);--wp--preset--gradient--everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);--wp--preset--gradient--kind-steel: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);--wp--preset--gradient--over-sun: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);--wp--preset--gradient--premium-white: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);--wp--preset--gradient--clean-mirror: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);--wp--preset--gradient--wild-apple: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);--wp--preset--gradient--snow-again: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);--wp--preset--gradient--confident-cloud: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);--wp--preset--gradient--glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);--wp--preset--gradient--perfect-white: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: clamp(22px, 1.375rem + ((1vw - 3.2px) * 0.625), 30px);--wp--preset--font-size--x-large: clamp(30px, 1.875rem + ((1vw - 3.2px) * 1.563), 50px);--wp--preset--font-size--xx-large: clamp(45px, 2.813rem + ((1vw - 3.2px) * 2.734), 80px);--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: var(--theme-block-max-width);--wp--style--global--wide-size: var(--theme-block-wide-max-width); }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: var(--theme-content-spacing); margin-block-end: 0; }:where(.wp-site-blocks) > :first-child:first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child:last-child { margin-block-end: 0; }body { --wp--style--block-gap: var(--theme-content-spacing); }:where(body .is-layout-flow)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-flow)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-flow)  > *{margin-block-start: var(--theme-content-spacing);margin-block-end: 0;}:where(body .is-layout-constrained)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-constrained)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-constrained)  > *{margin-block-start: var(--theme-content-spacing);margin-block-end: 0;}:where(body .is-layout-flex) {gap: var(--theme-content-spacing);}:where(body .is-layout-grid) {gap: var(--theme-content-spacing);}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-color{color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-color{color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-color{color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-color{color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-color{color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-color{color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-color{color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-color{color: var(--wp--preset--color--palette-color-8) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-background-color{background-color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-background-color{background-color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-background-color{background-color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-background-color{background-color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-background-color{background-color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-background-color{background-color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-background-color{background-color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-background-color{background-color: var(--wp--preset--color--palette-color-8) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-border-color{border-color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-border-color{border-color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-border-color{border-color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-border-color{border-color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-border-color{border-color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-border-color{border-color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-border-color{border-color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-border-color{border-color: var(--wp--preset--color--palette-color-8) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-juicy-peach-gradient-background{background: var(--wp--preset--gradient--juicy-peach) !important;}.has-young-passion-gradient-background{background: var(--wp--preset--gradient--young-passion) !important;}.has-true-sunset-gradient-background{background: var(--wp--preset--gradient--true-sunset) !important;}.has-morpheus-den-gradient-background{background: var(--wp--preset--gradient--morpheus-den) !important;}.has-plum-plate-gradient-background{background: var(--wp--preset--gradient--plum-plate) !important;}.has-aqua-splash-gradient-background{background: var(--wp--preset--gradient--aqua-splash) !important;}.has-love-kiss-gradient-background{background: var(--wp--preset--gradient--love-kiss) !important;}.has-new-retrowave-gradient-background{background: var(--wp--preset--gradient--new-retrowave) !important;}.has-plum-bath-gradient-background{background: var(--wp--preset--gradient--plum-bath) !important;}.has-high-flight-gradient-background{background: var(--wp--preset--gradient--high-flight) !important;}.has-teen-party-gradient-background{background: var(--wp--preset--gradient--teen-party) !important;}.has-fabled-sunset-gradient-background{background: var(--wp--preset--gradient--fabled-sunset) !important;}.has-arielle-smile-gradient-background{background: var(--wp--preset--gradient--arielle-smile) !important;}.has-itmeo-branding-gradient-background{background: var(--wp--preset--gradient--itmeo-branding) !important;}.has-deep-blue-gradient-background{background: var(--wp--preset--gradient--deep-blue) !important;}.has-strong-bliss-gradient-background{background: var(--wp--preset--gradient--strong-bliss) !important;}.has-sweet-period-gradient-background{background: var(--wp--preset--gradient--sweet-period) !important;}.has-purple-division-gradient-background{background: var(--wp--preset--gradient--purple-division) !important;}.has-cold-evening-gradient-background{background: var(--wp--preset--gradient--cold-evening) !important;}.has-mountain-rock-gradient-background{background: var(--wp--preset--gradient--mountain-rock) !important;}.has-desert-hump-gradient-background{background: var(--wp--preset--gradient--desert-hump) !important;}.has-ethernal-constance-gradient-background{background: var(--wp--preset--gradient--ethernal-constance) !important;}.has-happy-memories-gradient-background{background: var(--wp--preset--gradient--happy-memories) !important;}.has-grown-early-gradient-background{background: var(--wp--preset--gradient--grown-early) !important;}.has-morning-salad-gradient-background{background: var(--wp--preset--gradient--morning-salad) !important;}.has-night-call-gradient-background{background: var(--wp--preset--gradient--night-call) !important;}.has-mind-crawl-gradient-background{background: var(--wp--preset--gradient--mind-crawl) !important;}.has-angel-care-gradient-background{background: var(--wp--preset--gradient--angel-care) !important;}.has-juicy-cake-gradient-background{background: var(--wp--preset--gradient--juicy-cake) !important;}.has-rich-metal-gradient-background{background: var(--wp--preset--gradient--rich-metal) !important;}.has-mole-hall-gradient-background{background: var(--wp--preset--gradient--mole-hall) !important;}.has-cloudy-knoxville-gradient-background{background: var(--wp--preset--gradient--cloudy-knoxville) !important;}.has-soft-grass-gradient-background{background: var(--wp--preset--gradient--soft-grass) !important;}.has-saint-petersburg-gradient-background{background: var(--wp--preset--gradient--saint-petersburg) !important;}.has-everlasting-sky-gradient-background{background: var(--wp--preset--gradient--everlasting-sky) !important;}.has-kind-steel-gradient-background{background: var(--wp--preset--gradient--kind-steel) !important;}.has-over-sun-gradient-background{background: var(--wp--preset--gradient--over-sun) !important;}.has-premium-white-gradient-background{background: var(--wp--preset--gradient--premium-white) !important;}.has-clean-mirror-gradient-background{background: var(--wp--preset--gradient--clean-mirror) !important;}.has-wild-apple-gradient-background{background: var(--wp--preset--gradient--wild-apple) !important;}.has-snow-again-gradient-background{background: var(--wp--preset--gradient--snow-again) !important;}.has-confident-cloud-gradient-background{background: var(--wp--preset--gradient--confident-cloud) !important;}.has-glass-water-gradient-background{background: var(--wp--preset--gradient--glass-water) !important;}.has-perfect-white-gradient-background{background: var(--wp--preset--gradient--perfect-white) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+.wp-block-pullquote{font-size: clamp(0.984em, 0.984rem + ((1vw - 0.2em) * 0.645), 1.5em);line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='elementor-frontend-css' href='https://genbox.ai/wp-content/uploads/elementor/css/custom-frontend-lite.min.css?ver=1717539372' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://genbox.ai/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
+<link rel='stylesheet' id='elementor-post-17-css' href='https://genbox.ai/wp-content/uploads/elementor/css/post-17.css?ver=1717539372' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://genbox.ai/wp-content/uploads/elementor/css/custom-pro-frontend-lite.min.css?ver=1717539372' media='all' />
+<link rel='stylesheet' id='elementor-post-10-css' href='https://genbox.ai/wp-content/uploads/elementor/css/post-10.css?ver=1724151181' media='all' />
+<link rel='stylesheet' id='blocksy-fonts-font-source-google-css' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600&#038;display=swap' media='all' />
+<link rel='stylesheet' id='ct-main-styles-css' href='https://genbox.ai/wp-content/themes/blocksy/static/bundle/main.min.css?ver=2.0.38' media='all' />
+<link rel='stylesheet' id='ct-elementor-styles-css' href='https://genbox.ai/wp-content/themes/blocksy/static/bundle/elementor-frontend.min.css?ver=2.0.38' media='all' />
+<link rel='stylesheet' id='sky-elementor-addons-css' href='https://genbox.ai/wp-content/plugins/sky-elementor-addons/assets/css/sky-addons.css?ver=2.5.1' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.5.5' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="https://api.w.org/" href="https://genbox.ai/wp-json/" /><link rel="alternate" type="application/json" href="https://genbox.ai/wp-json/wp/v2/pages/10" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://genbox.ai/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.5" />
+<link rel="canonical" href="https://genbox.ai/" />
+<link rel='shortlink' href='https://genbox.ai/' />
+<link rel="alternate" type="application/json+oembed" href="https://genbox.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgenbox.ai%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://genbox.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgenbox.ai%2F&#038;format=xml" />
+<noscript><link rel='stylesheet' href='https://genbox.ai/wp-content/themes/blocksy/static/bundle/no-scripts.min.css' type='text/css'></noscript>
+<style id="ct-main-styles-inline-css">[data-header*="type-1"] {--has-transparent-header:1;}</style>
+<meta name="generator" content="Elementor 3.21.0; features: e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<link rel="icon" href="https://genbox.ai/wp-content/uploads/2024/04/cropped-Group-1000002526-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://genbox.ai/wp-content/uploads/2024/04/cropped-Group-1000002526-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://genbox.ai/wp-content/uploads/2024/04/cropped-Group-1000002526-180x180.png" />
+<meta name="msapplication-TileImage" content="https://genbox.ai/wp-content/uploads/2024/04/cropped-Group-1000002526-270x270.png" />
+	</head>
+
+
+<body class="home page-template-default page page-id-10 wp-custom-logo wp-embed-responsive elementor-default elementor-kit-17 elementor-page elementor-page-10 ct-elementor-default-template" data-link="type-2" data-prefix="single_page" data-header="type-1" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
+
+<a class="skip-link show-on-focus" href="#main">
+	Skip to content</a>
+
+<div class="ct-drawer-canvas" data-location="start" ><div id="offcanvas" class="ct-panel ct-header" data-behaviour="right-side" ><div class="ct-panel-inner">
+		<div class="ct-panel-actions">
+			<span class="ct-panel-heading">Menu</span>
+			<button class="ct-toggle-close" data-type="type-3" aria-label="Close drawer">
+				<svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15"><path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"/></svg>
+			</button>
+		</div>
+		<div class="ct-panel-content" data-device="desktop" ><div class="ct-panel-content-inner"></div></div><div class="ct-panel-content" data-device="mobile" ><div class="ct-panel-content-inner">
+<nav
+	class="mobile-menu"
+	data-id="mobile-menu" data-interaction="click" data-toggle-type="type-1" data-submenu-dots="yes" 	aria-label="Off Canvas Menu">
+	<ul id="menu-primary-menu-1" role="menubar"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-25" role="none"><a href="/" aria-current="page" class="ct-menu-link" role="menuitem">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-26" role="none"><a href="/#features" aria-current="page" class="ct-menu-link" role="menuitem">Features</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-27" role="none"><a href="/#about" aria-current="page" class="ct-menu-link" role="menuitem">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-28" role="none"><a href="/#Utilities" aria-current="page" class="ct-menu-link" role="menuitem">Utilities</a></li>
+</ul></nav>
+
+
+<div
+	class="ct-header-socials "
+	data-id="socials" >
+
+	
+		<div class="ct-social-box" data-color="custom" data-icon-size="custom" data-icons-type="simple"  >			
+				<a href="http://Twitter.com/" data-network="twitter" aria-label="X (Twitter)" target="_blank" rel="noopener" >
+					<span class="ct-icon-container" >
+					<svg
+					width="20px"
+					height="20px"
+					viewBox="0 0 20 20"
+					aria-hidden="true">
+						<path d="M2.9 0C1.3 0 0 1.3 0 2.9v14.3C0 18.7 1.3 20 2.9 20h14.3c1.6 0 2.9-1.3 2.9-2.9V2.9C20 1.3 18.7 0 17.1 0H2.9zm13.2 3.8L11.5 9l5.5 7.2h-4.3l-3.3-4.4-3.8 4.4H3.4l5-5.7-5.3-6.7h4.4l3 4 3.5-4h2.1zM14.4 15 6.8 5H5.6l7.7 10h1.1z"/>
+					</svg>
+				</span>				</a>
+							
+				<a href="http://t.me/" data-network="telegram" aria-label="Telegram" target="_blank" rel="noopener" >
+					<span class="ct-icon-container" >
+					<svg
+					width="20px"
+					height="20px"
+					viewBox="0 0 20 20"
+					aria-hidden="true">
+						<path d="M19.9,3.1l-3,14.2c-0.2,1-0.8,1.3-1.7,0.8l-4.6-3.4l-2.2,2.1c-0.2,0.2-0.5,0.5-0.9,0.5l0.3-4.7L16.4,5c0.4-0.3-0.1-0.5-0.6-0.2L5.3,11.4L0.7,10c-1-0.3-1-1,0.2-1.5l17.7-6.8C19.5,1.4,20.2,1.9,19.9,3.1z"/>
+					</svg>
+				</span>				</a>
+			
+			
+					</div>
+
+	
+</div>
+</div></div></div></div>
+	<a href="#main-container" class="ct-back-to-top ct-hidden-sm"
+		data-shape="circle"
+		data-alignment="right"
+		title="Go to top" aria-label="Go to top" hidden>
+
+		<svg class="ct-icon" width="15" height="15" viewBox="0 0 20 20"><path d="M10,0c0,0-4.4,3-4.4,9.6c0,0.1,0,0.2,0,0.4c-0.8,0.6-2.2,1.9-2.2,3c0,1.3,1.3,4,1.3,4L7.1,14l0.7,1.6h4.4l0.7-1.6l2.4,3.1c0,0,1.3-2.7,1.3-4c0-1.1-1.5-2.4-2.2-3c0-0.1,0-0.2,0-0.4C14.4,3,10,0,10,0zM10,5.2c0.8,0,1.5,0.7,1.5,1.5S10.8,8.1,10,8.1S8.5,7.5,8.5,6.7S9.2,5.2,10,5.2z M8.1,16.3c-0.2,0.2-0.3,0.5-0.3,0.8C7.8,18.5,10,20,10,20s2.2-1.4,2.2-2.9c0-0.3-0.1-0.6-0.3-0.8h-0.6c0,0.1,0,0.1,0,0.2c0,1-1.3,1.5-1.3,1.5s-1.3-0.5-1.3-1.5c0-0.1,0-0.1,0-0.2H8.1z"/></svg>	</a>
+
+	</div>
+<div id="main-container">
+	<header id="header" class="ct-header" data-id="type-1" itemscope="" itemtype="https://schema.org/WPHeader" ><div data-device="desktop" data-transparent="" ><div data-row="middle" data-column-set="2" data-transparent-row="yes" ><div class="ct-container-fluid" ><div data-column="start" data-placements="1" ><div data-items="primary" >
+<div	class="site-branding"
+	data-id="logo" 	data-logo="top"	itemscope="itemscope" itemtype="https://schema.org/Organization" >
+
+			<a href="/" class="site-logo-container" rel="home" itemprop="url" ><img loading="lazy" style="
+				width: 75px; 
+				height: 75px;
+				margin-top: -5px;
+			" width="1106" height="1099" src="./assets/logo.png" class="default-logo" alt="Genbox" itemprop="logo" decoding="async" srcset="./assets/logo.png" sizes="(max-width: 1106px) 100vw, 1106px" /></a>	
+			<div class="site-title-container">
+							<span class="site-title " itemprop="name" >
+					<a href="/" rel="home" itemprop="url" >
+											</a>
+				</span>
+			
+					</div>
+	  </div>
+
+</div></div><div data-column="end" data-placements="1" ><div data-items="primary" >
+<nav
+	id="header-menu-1"
+	class="header-menu-1"
+	data-id="menu" data-interaction="hover" 	data-menu="type-1"
+	data-dropdown="type-1:simple"		data-responsive="no"	itemscope="" itemtype="https://schema.org/SiteNavigationElement" 	aria-label="Header Menu">
+
+	<ul id="menu-primary-menu" class="menu" role="menubar"><li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-25" role="none"><a href="/" aria-current="page" class="ct-menu-link" role="menuitem">Home</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-26" role="none"><a href="/#features" aria-current="page" class="ct-menu-link" role="menuitem">Features</a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-27" role="none"><a href="/#about" aria-current="page" class="ct-menu-link" role="menuitem">About</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-28" role="none"><a href="/#Utilities" aria-current="page" class="ct-menu-link" role="menuitem">Utilities</a></li>
+</ul></nav>
+
+
+<div
+	class="ct-header-socials "
+	data-id="socials" >
+
+	
+		<div class="ct-social-box" data-color="custom" data-icon-size="custom" data-icons-type="simple"  >
+							
+				<a href="http://Twitter.com/" data-network="twitter" aria-label="X (Twitter)" target="_blank" rel="noopener" >
+					<span class="ct-icon-container" >
+					<svg
+					width="20px"
+					height="20px"
+					viewBox="0 0 20 20"
+					aria-hidden="true">
+						<path d="M2.9 0C1.3 0 0 1.3 0 2.9v14.3C0 18.7 1.3 20 2.9 20h14.3c1.6 0 2.9-1.3 2.9-2.9V2.9C20 1.3 18.7 0 17.1 0H2.9zm13.2 3.8L11.5 9l5.5 7.2h-4.3l-3.3-4.4-3.8 4.4H3.4l5-5.7-5.3-6.7h4.4l3 4 3.5-4h2.1zM14.4 15 6.8 5H5.6l7.7 10h1.1z"/>
+					</svg>
+				</span>				</a>
+							
+				<a href="http://t.me/" data-network="telegram" aria-label="Telegram" target="_blank" rel="noopener" >
+					<span class="ct-icon-container" >
+					<svg
+					width="20px"
+					height="20px"
+					viewBox="0 0 20 20"
+					aria-hidden="true">
+						<path d="M19.9,3.1l-3,14.2c-0.2,1-0.8,1.3-1.7,0.8l-4.6-3.4l-2.2,2.1c-0.2,0.2-0.5,0.5-0.9,0.5l0.3-4.7L16.4,5c0.4-0.3-0.1-0.5-0.6-0.2L5.3,11.4L0.7,10c-1-0.3-1-1,0.2-1.5l17.7-6.8C19.5,1.4,20.2,1.9,19.9,3.1z"/>
+					</svg>
+				</span>				</a>
+			
+			
+					</div>
+
+	
+</div>
+
+<div
+	class="ct-header-cta"
+	data-id="button" >
+	<a
+		href="https://generate.genbox.ai/"
+		class="ct-button-ghost"
+		data-size="medium" aria-label="Try GenBox AI" >
+		Try PixForge AI	</a>
+</div>
+</div></div></div></div></div><div data-device="mobile" data-transparent="" ><div data-row="middle" data-column-set="2" data-transparent-row="yes" ><div class="ct-container-fluid" ><div data-column="start" data-placements="1" ><div data-items="primary" >
+<div	class="site-branding"
+	data-id="logo" 	data-logo="top"	>
+
+			<a href="https://genbox.ai/" class="site-logo-container" rel="home" itemprop="url" ><img loading="lazy" width="1106" height="1099" src="./assets/logo.png" class="default-logo" alt="Genbox" itemprop="logo" decoding="async" srcset="./assets/logo.png" sizes="(max-width: 1106px) 100vw, 1106px" /></a>	
+			<div class="site-title-container">
+							<span class="site-title " >
+					<a href="https://genbox.ai/" rel="home" >
+											</a>
+				</span>
+			
+					</div>
+	  </div>
+
+</div></div><div data-column="end" data-placements="1" ><div data-items="primary" >
+<button
+	data-toggle-panel="#offcanvas"
+	class="ct-header-trigger ct-toggle "
+	data-design="simple"
+	data-label="right"
+	aria-label="Menu"
+	data-id="trigger" >
+
+	<span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg">Menu</span>
+
+	<svg
+		class="ct-icon"
+		width="18" height="14" viewBox="0 0 18 14"
+		aria-hidden="true"
+		data-type="type-3">
+
+		<rect y="0.00" width="18" height="1.7" rx="1"/>
+		<rect y="6.15" width="18" height="1.7" rx="1"/>
+		<rect y="12.3" width="18" height="1.7" rx="1"/>
+	</svg>
+</button>
+</div></div></div></div></div></header>
+	<main id="main" class="site-main hfeed" >
+
+		
+	<div
+		class="ct-container-full"
+				data-content="normal"		data-vertical-spacing="top:bottom">
+
+		
+		
+	<article
+		id="post-10"
+		class="post-10 page type-page status-publish hentry">
+
+		
+		
+		
+		<div class="entry-content">
+					<div data-elementor-type="wp-page" data-elementor-id="10" class="elementor elementor-10" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-41b92cb e-con-full e-flex e-con e-parent" data-id="41b92cb" data-element_type="container" id="ripple" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-d3994f7 e-flex e-con-boxed e-con e-child" data-id="d3994f7" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-43855f1 e-con-full e-flex e-con e-child" data-id="43855f1" data-element_type="container">
+				<div class="elementor-element elementor-element-3fc6f20 elementor-widget elementor-widget-heading" data-id="3fc6f20" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 15-04-2024 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Join PixForge AI</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-bece557 elementor-widget elementor-widget-heading" data-id="bece557" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Connect. Contribute. Thrive</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d54ec28 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="d54ec28" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 15-04-2024 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>PixForge AI ($PFAI) leads the gaming industry with cutting-edge innovation, harnessing the power of Natural Language Processing (NLP) and Artificial Intelligence (AI). Our platform revolutionizes game development, freeing developers to focus on creativity and craft immersive gaming experiences unlike any other.</p>						</div>
+				</div>
+		<div class="elementor-element elementor-element-9c51ba7 e-con-full e-flex e-con e-child" data-id="9c51ba7" data-element_type="container">
+				<div class="elementor-element elementor-element-cbce8d0 elementor-widget elementor-widget-bdt-advanced-button" data-id="cbce8d0" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}" data-widget_type="bdt-advanced-button.default">
+				<div class="elementor-widget-container">
+					<div class="bdt-ep-button-wrapper">
+			<a href="https://generate.genbox.ai/" target="_blank" class="bdt-ep-button bdt-ep-button-effect-h bdt-ep-button-size-md">
+						<div class="bdt-ep-button-content-wrapper bdt-flex bdt-flex-middle bdt-flex-center  " data-text="try genbox">
+			
+			<div class="bdt-ep-button-text">
+
+                <span class="avdbtn-text">try $PFAI</span>
+
+				            </div>
+
+			
+		</div>
+					</a>
+		</div>
+				</div>
+				</div>
+		<div data-ep-wrapper-link="" style="cursor: pointer" class="bdt-element-link elementor-element elementor-element-d369672 e-con-full e-flex e-con e-child" data-id="d369672" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div data-ep-wrapper-link="" style="cursor: pointer" class="bdt-element-link elementor-element elementor-element-886ed48 elementor-widget elementor-widget-image" data-id="886ed48" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 15-04-2024 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>										<img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="194" src="https://genbox.ai/wp-content/uploads/2024/04/Frame-57-1-1024x194.png" class="attachment-large size-large wp-image-2530" alt="" srcset="https://genbox.ai/wp-content/uploads/2024/04/Frame-57-1-1024x194.png 1024w, https://genbox.ai/wp-content/uploads/2024/04/Frame-57-1-300x57.png 300w, https://genbox.ai/wp-content/uploads/2024/04/Frame-57-1-768x145.png 768w, https://genbox.ai/wp-content/uploads/2024/04/Frame-57-1.png 1189w" sizes="(max-width: 1024px) 100vw, 1024px" />													</div>
+				</div>
+				</div>
+		<div data-ep-wrapper-link="" style="cursor: pointer" class="bdt-element-link elementor-element elementor-element-907a37c e-con-full e-flex e-con e-child" data-id="907a37c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div data-ep-wrapper-link="" style="cursor: pointer" class="bdt-element-link elementor-element elementor-element-3632df4 elementor-widget elementor-widget-image" data-id="3632df4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="1024" height="159" src="https://genbox.ai/wp-content/uploads/2024/04/Frame-56-1-1-1024x159.png" class="attachment-large size-large wp-image-2531" alt="" srcset="https://genbox.ai/wp-content/uploads/2024/04/Frame-56-1-1-1024x159.png 1024w, https://genbox.ai/wp-content/uploads/2024/04/Frame-56-1-1-300x46.png 300w, https://genbox.ai/wp-content/uploads/2024/04/Frame-56-1-1-768x119.png 768w, https://genbox.ai/wp-content/uploads/2024/04/Frame-56-1-1.png 1453w" sizes="(max-width: 1024px) 100vw, 1024px" />													</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-02515e5 e-con-full e-flex e-con e-child" data-id="02515e5" data-element_type="container">
+				<div class="elementor-element elementor-element-7c523c9 elementor-widget elementor-widget-bdt-advanced-button" data-id="7c523c9" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}" data-widget_type="bdt-advanced-button.default">
+				<div class="elementor-widget-container">
+					<div class="bdt-ep-button-wrapper">
+			<a href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x00000000000000000000000000000000000000" target="_blank" class="bdt-ep-button bdt-ep-button-effect-h bdt-ep-button-size-md">
+						<div class="bdt-ep-button-content-wrapper bdt-flex bdt-flex-middle bdt-flex-center  " data-text="White paper">
+			
+			<div class="bdt-ep-button-text">
+
+                <span class="avdbtn-text">BUY $PFAI</span>
+
+				            </div>
+
+			
+		</div>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-32be910 elementor-widget elementor-widget-bdt-advanced-button" data-id="32be910" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}" data-widget_type="bdt-advanced-button.default">
+				<div class="elementor-widget-container">
+					<div class="bdt-ep-button-wrapper">
+			<a href="https://www.dextools.io/app/en/ether/pool-explorer/0x" target="_blank" class="bdt-ep-button bdt-ep-button-effect-h bdt-ep-button-size-md">
+						<div class="bdt-ep-button-content-wrapper bdt-flex bdt-flex-middle bdt-flex-center  " data-text="Pitch Deck">
+			
+			<div class="bdt-ep-button-text">
+
+                <span class="avdbtn-text">Chart</span>
+
+				            </div>
+
+			
+		</div>
+					</a>
+		</div>
+				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-006a104 elementor-widget__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="006a104" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Launching on Runes (BTC) and Ethereum (ERC20)</h2>		</div>
+				</div>
+		<div class="elementor-element elementor-element-44dbb90 e-flex e-con-boxed e-con e-child" data-id="44dbb90" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-21292fc elementor-widget elementor-widget-image" data-id="21292fc" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="1024" height="1024" src="https://genbox.ai/wp-content/uploads/2024/04/Group-18441-1-1024x1024.png" class="elementor-animation-grow attachment-large size-large wp-image-2466" alt="" srcset="https://genbox.ai/wp-content/uploads/2024/04/Group-18441-1-1024x1024.png 1024w, https://genbox.ai/wp-content/uploads/2024/04/Group-18441-1-300x300.png 300w, https://genbox.ai/wp-content/uploads/2024/04/Group-18441-1-150x150.png 150w, https://genbox.ai/wp-content/uploads/2024/04/Group-18441-1-768x768.png 768w, https://genbox.ai/wp-content/uploads/2024/04/Group-18441-1.png 1040w" sizes="(max-width: 1024px) 100vw, 1024px" />													</div>
+				</div>
+				<div data-ep-wrapper-link="{&quot;url&quot;:&quot;https:\/\/ethereum.org\/en\/&quot;,&quot;is_external&quot;:&quot;on&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;}" style="cursor: pointer" class="bdt-element-link elementor-element elementor-element-9e0a67a elementor-widget elementor-widget-image" data-id="9e0a67a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="1024" height="1024" src="https://genbox.ai/wp-content/uploads/2024/04/Group-18440-1-1024x1024.png" class="elementor-animation-grow attachment-large size-large wp-image-2468" alt="" srcset="https://genbox.ai/wp-content/uploads/2024/04/Group-18440-1-1024x1024.png 1024w, https://genbox.ai/wp-content/uploads/2024/04/Group-18440-1-300x300.png 300w, https://genbox.ai/wp-content/uploads/2024/04/Group-18440-1-150x150.png 150w, https://genbox.ai/wp-content/uploads/2024/04/Group-18440-1-768x768.png 768w, https://genbox.ai/wp-content/uploads/2024/04/Group-18440-1.png 1048w" sizes="(max-width: 1024px) 100vw, 1024px" />													</div>
+				</div>
+					</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-31c5470 e-con-full e-flex e-con e-parent" data-id="31c5470" data-element_type="container" id="stop" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-d80d29a e-flex e-con-boxed e-con e-child" data-id="d80d29a" data-element_type="container" id="about">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-56f0a38 e-con-full e-flex e-con e-child" data-id="56f0a38" data-element_type="container">
+		<div class="elementor-element elementor-element-e114e69 e-con-full e-flex e-con e-child" data-id="e114e69" data-element_type="container">
+				<div class="elementor-element elementor-element-fa71f83 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="fa71f83" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:41,&quot;end&quot;:63}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">PIXFORGE</h2>		</div>
+				</div>
+		<div class="elementor-element elementor-element-35fbe23 e-con-full e-flex e-con e-child" data-id="35fbe23" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-54b421a elementor-widget elementor-widget-image" data-id="54b421a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="570" height="610" src="https://genbox.ai/wp-content/uploads/2024/04/edit-5.png" class="attachment-large size-large wp-image-94" alt="" srcset="https://genbox.ai/wp-content/uploads/2024/04/edit-5.png 570w, https://genbox.ai/wp-content/uploads/2024/04/edit-5-280x300.png 280w" sizes="(max-width: 570px) 100vw, 570px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-89c82c6 elementor-widget elementor-widget-video" data-id="89c82c6" data-element_type="widget" data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;play_on_mobile&quot;:&quot;yes&quot;,&quot;mute&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 15-04-2024 */
+.elementor-widget-video .elementor-widget-container{overflow:hidden;transform:translateZ(0)}.elementor-widget-video .elementor-wrapper{aspect-ratio:var(--video-aspect-ratio)}.elementor-widget-video .elementor-wrapper iframe,.elementor-widget-video .elementor-wrapper video{height:100%;width:100%;display:flex;border:none;background-color:#000}@supports not (aspect-ratio:1/1){.elementor-widget-video .elementor-wrapper{position:relative;overflow:hidden;height:0;padding-bottom:calc(100% / var(--video-aspect-ratio))}.elementor-widget-video .elementor-wrapper iframe,.elementor-widget-video .elementor-wrapper video{position:absolute;top:0;right:0;bottom:0;left:0}}.elementor-widget-video .elementor-open-inline .elementor-custom-embed-image-overlay{position:absolute;top:0;right:0;bottom:0;left:0;background-size:cover;background-position:50%}.elementor-widget-video .elementor-custom-embed-image-overlay{cursor:pointer;text-align:center}.elementor-widget-video .elementor-custom-embed-image-overlay:hover .elementor-custom-embed-play i{opacity:1}.elementor-widget-video .elementor-custom-embed-image-overlay img{display:block;width:100%;aspect-ratio:var(--video-aspect-ratio);-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center}@supports not (aspect-ratio:1/1){.elementor-widget-video .elementor-custom-embed-image-overlay{position:relative;overflow:hidden;height:0;padding-bottom:calc(100% / var(--video-aspect-ratio))}.elementor-widget-video .elementor-custom-embed-image-overlay img{position:absolute;top:0;right:0;bottom:0;left:0}}.elementor-widget-video .e-hosted-video .elementor-video{-o-object-fit:cover;object-fit:cover}.e-con-inner>.elementor-widget-video,.e-con>.elementor-widget-video{width:var(--container-widget-width);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="e-hosted-video elementor-wrapper elementor-open-inline">
+					<video class="elementor-video" src="https://genbox.ai/wp-content/uploads/2024/04/0417.mp4" autoplay="" loop="" controls="" muted="muted" playsinline="" controlsList="nodownload"></video>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9003915 e-con-full e-flex e-con e-child" data-id="9003915" data-element_type="container" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:41,&quot;end&quot;:61}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}">
+				<div class="elementor-element elementor-element-5e9d2de elementor-widget elementor-widget-text-editor" data-id="5e9d2de" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<ul><li>about the PixForge AI</li></ul>						</div>
+				</div>
+				<div class="elementor-element elementor-element-c587632 elementor-widget elementor-widget-heading" data-id="c587632" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Where Innovation <br>
+Meets Imagination</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3630852 elementor-widget elementor-widget-text-editor" data-id="3630852" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge AI ($PFAI) stands at the forefront of game development innovation, leveraging Natural Language Processing (NLP) and Artificial Intelligence (AI) to redefine the creative process. Our platform empowers developers to transcend traditional methodologies, enabling them to focus on unleashing their imagination and crafting immersive gaming experiences.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-5ba50da elementor-widget elementor-widget-bdt-advanced-button" data-id="5ba50da" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}" data-widget_type="bdt-advanced-button.default">
+				<div class="elementor-widget-container">
+					<div class="bdt-ep-button-wrapper">
+			<a href="https://github.com/GenboxAi/GenboxAi" target="_blank" class="bdt-ep-button bdt-ep-button-effect-h bdt-ep-button-size-md">
+						<div class="bdt-ep-button-content-wrapper bdt-flex bdt-flex-middle bdt-flex-center  " data-text="Try Genbox">
+			
+			<div class="bdt-ep-button-text">
+
+                <span class="avdbtn-text">Try $PFAI</span>
+
+				            </div>
+
+			
+		</div>
+					</a>
+		</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4f49097 e-flex e-con-boxed e-con e-child" data-id="4f49097" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4049088 elementor-widget elementor-widget-heading" data-id="4049088" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">partners and integrations</p>		</div>
+				</div>
+		<div class="elementor-element elementor-element-141457b e-con-full e-flex e-con e-child" data-id="141457b" data-element_type="container">
+				<div class="elementor-element elementor-element-03c890b elementor-widget__width-inherit elementor-widget elementor-widget-image-carousel" data-id="03c890b" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;8&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;slides_to_show_tablet&quot;:&quot;5&quot;,&quot;slides_to_show_mobile&quot;:&quot;3&quot;,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:83,&quot;sizes&quot;:[]},&quot;autoplay_speed&quot;:0,&quot;speed&quot;:1000,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;image_spacing_custom_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 15-04-2024 */
+.elementor-widget-image-carousel .swiper,.elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure,.elementor-widget-image-carousel .swiper .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized):not(.swiper-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}</style>		<div class="elementor-image-carousel-wrapper swiper" dir="rtl">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 8"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://genbox.ai/wp-content/uploads/2024/04/CITYPNG-1-copy.png" alt="[CITYPNG 1 copy" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 8"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://genbox.ai/wp-content/uploads/2024/04/image-14-copy.png" alt="image 14 copy" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 8"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://genbox.ai/wp-content/uploads/2024/04/image-15-copy.png" alt="image 15 copy" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 8"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://genbox.ai/wp-content/uploads/2024/04/image-16.png" alt="image 16" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 8"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://genbox.ai/wp-content/uploads/2024/04/image-17.png" alt="image 17" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 8"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://genbox.ai/wp-content/uploads/2024/04/image-18-copy.png" alt="image 18 copy" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 of 8"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://genbox.ai/wp-content/uploads/2024/04/image-19-copy.png" alt="image 19 copy" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 of 8"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://genbox.ai/wp-content/uploads/2024/04/pngegg-copy.png" alt="pngegg copy" /></figure></div>			</div>
+							
+									</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9080547 e-con-full e-flex e-con e-child" data-id="9080547" data-element_type="container">
+		<div class="elementor-element elementor-element-a2f2840 e-flex e-con-boxed e-con e-child" data-id="a2f2840" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-11da4a4 e-con-full e-flex e-con e-child" data-id="11da4a4" data-element_type="container">
+				<div class="elementor-element elementor-element-67cfc9a elementor-widget elementor-widget-text-editor" data-id="67cfc9a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<ul><li>Social &amp; Content Creators</li></ul>						</div>
+				</div>
+				<div class="elementor-element elementor-element-8e65e3f elementor-widget elementor-widget-heading" data-id="8e65e3f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Enhancing Content Creation with <br> PixForge AI</h2>		</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-cb888c4 e-con-full e-flex e-con e-child" data-id="cb888c4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-d6ae492 elementor-widget elementor-widget-sky-glory-slider" data-id="d6ae492" data-element_type="widget" data-widget_type="sky-glory-slider.default">
+				<div class="elementor-widget-container">
+					<div class="sa-glory-slider" id="sa-glory-slider-d6ae492" data-player-settings="{&quot;effect&quot;:&quot;coverflow&quot;,&quot;slidesPerView&quot;:1.2,&quot;centeredSlides&quot;:true,&quot;loop&quot;:true,&quot;speed&quot;:1200,&quot;loopedSlides&quot;:10,&quot;lazy&quot;:true,&quot;parallax&quot;:true,&quot;observer&quot;:true,&quot;observeParents&quot;:true,&quot;coverflowEffect&quot;:{&quot;depth&quot;:900,&quot;modifier&quot;:1,&quot;rotate&quot;:30,&quot;stretch&quot;:20,&quot;slideShadows&quot;:false},&quot;breakpoints&quot;:{&quot;689&quot;:{&quot;slidesPerView&quot;:1.4},&quot;999&quot;:{&quot;slidesPerView&quot;:1.7}}}" data-thumbs-settings="{&quot;slidesPerView&quot;:&quot;auto&quot;,&quot;spaceBetween&quot;:10,&quot;centeredSlides&quot;:true,&quot;loop&quot;:true,&quot;speed&quot;:1200,&quot;loopedSlides&quot;:10,&quot;watchSlidesVisibility&quot;:true,&quot;watchSlidesProgress&quot;:true,&quot;slideToClickedSlide&quot;:true,&quot;mousewheel&quot;:true,&quot;breakpoints&quot;:{&quot;689&quot;:{&quot;spaceBetween&quot;:16},&quot;999&quot;:{&quot;spaceBetween&quot;:20}}}">
+
+			<div class="swiper-container sa-glory-player">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide">
+							<div class="sa-player-wrapper sa-rounded">
+
+								<img decoding="async" class="sa-player-poster" src="https://genbox.ai/wp-content/uploads/2024/04/0417-Cover-1-scaled.jpg"
+									alt="Genbox AI landscape generator" />
+
+																	<div class="sa-play-button-wrapper">
+										<a class="sa-play-button sa-icon-wrap sa-text-decoration-none sa-d-flex sa-justify-content-center sa-align-content-center sa-p-4"
+											href="javascript:void(0);" data-src="https://genbox.ai/wp-content/uploads/2024/04/Genbox-MVP-1.mp4">
+											<i class="fas fa-play"></i>
+										</a>
+									</div>
+								
+								<div class="sa-player-content-wrapper">
+									<h3 class="sa-player-title sa-fw-bold sa-m-0">PixForge AI landscape generator</h3>									<a class="sa-player-credit sa-d-inline-block sa-text-decoration-none"
+										href="<? echo esc_url( $credit_url ); ?>" target="<? echo esc_attr( $target ); ?>" >
+										By PixForge AI									</a>
+								</div>
+
+								<div class="sa-video-player">
+									<iframe src="about:blank" class="sa-player-iframe" allow="autoplay;" frameborder="no"
+										webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe>
+								</div>
+
+							</div>
+
+						</div>
+											<div class="swiper-slide">
+							<div class="sa-player-wrapper sa-rounded">
+
+								<img decoding="async" class="sa-player-poster" src="https://genbox.ai/wp-content/uploads/2024/04/video-1-Cover.jpg"
+									alt="Outside landscape" />
+
+																	<div class="sa-play-button-wrapper">
+										<a class="sa-play-button sa-icon-wrap sa-text-decoration-none sa-d-flex sa-justify-content-center sa-align-content-center sa-p-4"
+											href="javascript:void(0);" data-src="https://genbox.ai/wp-content/uploads/2024/04/video-1.mp4">
+											<i class="fas fa-play"></i>
+										</a>
+									</div>
+								
+								<div class="sa-player-content-wrapper">
+									<h3 class="sa-player-title sa-fw-bold sa-m-0">Outside landscape</h3>									<a class="sa-player-credit sa-d-inline-block sa-text-decoration-none"
+										href="<? echo esc_url( $credit_url ); ?>" target="<? echo esc_attr( $target ); ?>" >
+										By PixForge									</a>
+								</div>
+
+								<div class="sa-video-player">
+									<iframe src="about:blank" class="sa-player-iframe" allow="autoplay;" frameborder="no"
+										webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe>
+								</div>
+
+							</div>
+
+						</div>
+											<div class="swiper-slide">
+							<div class="sa-player-wrapper sa-rounded">
+
+								<img decoding="async" class="sa-player-poster" src="https://genbox.ai/wp-content/uploads/2024/04/video-2-Cover.jpg"
+									alt="horror landscape" />
+
+																	<div class="sa-play-button-wrapper">
+										<a class="sa-play-button sa-icon-wrap sa-text-decoration-none sa-d-flex sa-justify-content-center sa-align-content-center sa-p-4"
+											href="javascript:void(0);" data-src="https://genbox.ai/wp-content/uploads/2024/04/video-2-1.mp4">
+											<i class="fas fa-play"></i>
+										</a>
+									</div>
+								
+								<div class="sa-player-content-wrapper">
+									<h3 class="sa-player-title sa-fw-bold sa-m-0">horror landscape</h3>									<a class="sa-player-credit sa-d-inline-block sa-text-decoration-none"
+										href="<? echo esc_url( $credit_url ); ?>" target="<? echo esc_attr( $target ); ?>" >
+										By PixForge AI									</a>
+								</div>
+
+								<div class="sa-video-player">
+									<iframe src="about:blank" class="sa-player-iframe" allow="autoplay;" frameborder="no"
+										webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe>
+								</div>
+
+							</div>
+
+						</div>
+											<div class="swiper-slide">
+							<div class="sa-player-wrapper sa-rounded">
+
+								<img decoding="async" class="sa-player-poster" src="https://genbox.ai/wp-content/uploads/2024/04/video3-Cover.jpg"
+									alt="AI landscapes" />
+
+																	<div class="sa-play-button-wrapper">
+										<a class="sa-play-button sa-icon-wrap sa-text-decoration-none sa-d-flex sa-justify-content-center sa-align-content-center sa-p-4"
+											href="javascript:void(0);" data-src="https://genbox.ai/wp-content/uploads/2024/04/video3.mp4">
+											<i class="fas fa-play"></i>
+										</a>
+									</div>
+								
+								<div class="sa-player-content-wrapper">
+									<h3 class="sa-player-title sa-fw-bold sa-m-0">AI landscapes</h3>									<a class="sa-player-credit sa-d-inline-block sa-text-decoration-none"
+										href="<? echo esc_url( $credit_url ); ?>" target="<? echo esc_attr( $target ); ?>" >
+										By PixForge AI									</a>
+								</div>
+
+								<div class="sa-video-player">
+									<iframe src="about:blank" class="sa-player-iframe" allow="autoplay;" frameborder="no"
+										webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe>
+								</div>
+
+							</div>
+
+						</div>
+											<div class="swiper-slide">
+							<div class="sa-player-wrapper sa-rounded">
+
+								<img decoding="async" class="sa-player-poster" src="https://genbox.ai/wp-content/uploads/2024/04/0417-Cover-1-scaled.jpg"
+									alt="Genbox AI landscape generator" />
+
+																	<div class="sa-play-button-wrapper">
+										<a class="sa-play-button sa-icon-wrap sa-text-decoration-none sa-d-flex sa-justify-content-center sa-align-content-center sa-p-4"
+											href="javascript:void(0);" data-src="https://genbox.ai/wp-content/uploads/2024/04/0417.mp4">
+											<i class="fas fa-play"></i>
+										</a>
+									</div>
+								
+								<div class="sa-player-content-wrapper">
+									<h3 class="sa-player-title sa-fw-bold sa-m-0">PixForge AI landscape generator</h3>									<a class="sa-player-credit sa-d-inline-block sa-text-decoration-none"
+										href="<? echo esc_url( $credit_url ); ?>" target="<? echo esc_attr( $target ); ?>" >
+										By PixForge AI									</a>
+								</div>
+
+								<div class="sa-video-player">
+									<iframe src="about:blank" class="sa-player-iframe" allow="autoplay;" frameborder="no"
+										webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe>
+								</div>
+
+							</div>
+
+						</div>
+											<div class="swiper-slide">
+							<div class="sa-player-wrapper sa-rounded">
+
+								<img decoding="async" class="sa-player-poster" src="https://genbox.ai/wp-content/uploads/2024/04/walkthrough-video-Cover.jpg"
+									alt="AI landscape generator" />
+
+																	<div class="sa-play-button-wrapper">
+										<a class="sa-play-button sa-icon-wrap sa-text-decoration-none sa-d-flex sa-justify-content-center sa-align-content-center sa-p-4"
+											href="javascript:void(0);" data-src="https://genbox.ai/wp-content/uploads/2024/04/2b15b49b-3494-4a1b-83c8-8378a812286d.mp4">
+											<i class="fas fa-play"></i>
+										</a>
+									</div>
+								
+								<div class="sa-player-content-wrapper">
+									<h3 class="sa-player-title sa-fw-bold sa-m-0">AI landscape generator</h3>									<a class="sa-player-credit sa-d-inline-block sa-text-decoration-none"
+										href="<? echo esc_url( $credit_url ); ?>" target="<? echo esc_attr( $target ); ?>" >
+										By PixForge AI									</a>
+								</div>
+
+								<div class="sa-video-player">
+									<iframe src="about:blank" class="sa-player-iframe" allow="autoplay;" frameborder="no"
+										webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe>
+								</div>
+
+							</div>
+
+						</div>
+									</div>
+
+			</div>
+
+			<div class="swiper-container sa-glory-thumbs">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide">
+							<div class="sa-thumb-wrapper sa-rounded">
+								<img decoding="async" src="https://genbox.ai/wp-content/uploads/2024/04/0417-Cover-1-scaled.jpg"
+									alt="Genbox AI landscape generator" />
+							</div>
+						</div>
+											<div class="swiper-slide">
+							<div class="sa-thumb-wrapper sa-rounded">
+								<img decoding="async" src="https://genbox.ai/wp-content/uploads/2024/04/video-1-Cover.jpg"
+									alt="Outside landscape" />
+							</div>
+						</div>
+											<div class="swiper-slide">
+							<div class="sa-thumb-wrapper sa-rounded">
+								<img decoding="async" src="https://genbox.ai/wp-content/uploads/2024/04/video-2-Cover.jpg"
+									alt="horror landscape" />
+							</div>
+						</div>
+											<div class="swiper-slide">
+							<div class="sa-thumb-wrapper sa-rounded">
+								<img decoding="async" src="https://genbox.ai/wp-content/uploads/2024/04/video3-Cover.jpg"
+									alt="AI landscapes" />
+							</div>
+						</div>
+											<div class="swiper-slide">
+							<div class="sa-thumb-wrapper sa-rounded">
+								<img decoding="async" src="https://genbox.ai/wp-content/uploads/2024/04/0417-Cover-1-scaled.jpg"
+									alt="Genbox AI landscape generator" />
+							</div>
+						</div>
+											<div class="swiper-slide">
+							<div class="sa-thumb-wrapper sa-rounded">
+								<img decoding="async" src="https://genbox.ai/wp-content/uploads/2024/04/walkthrough-video-Cover.jpg"
+									alt="AI landscape generator" />
+							</div>
+						</div>
+									</div>
+
+			</div>
+
+		</div>
+
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b22ee55 e-con-full e-flex e-con e-child" data-id="b22ee55" data-element_type="container">
+		<div class="elementor-element elementor-element-d7292d6 e-con-full e-flex e-con e-child" data-id="d7292d6" data-element_type="container">
+		<div class="elementor-element elementor-element-eec0211 e-con-full e-flex e-con e-child" data-id="eec0211" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-fe0e538 elementor-widget elementor-widget-counter" data-id="fe0e538" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 15-04-2024 */
+.elementor-counter{display:flex;justify-content:center;align-items:stretch;flex-direction:column-reverse}.elementor-counter .elementor-counter-number{flex-grow:var(--counter-number-grow,0)}.elementor-counter .elementor-counter-number-wrapper{flex:1;display:flex;font-size:69px;font-weight:600;line-height:1;text-align:center}.elementor-counter .elementor-counter-number-prefix{text-align:end;flex-grow:var(--counter-prefix-grow,1);white-space:pre-wrap}.elementor-counter .elementor-counter-number-suffix{text-align:start;flex-grow:var(--counter-suffix-grow,1);white-space:pre-wrap}.elementor-counter .elementor-counter-title{flex:1;display:flex;justify-content:center;align-items:center;margin:0;padding:0;font-size:19px;font-weight:400;line-height:2.5}</style>		<div class="elementor-counter">
+			<div class="elementor-counter-title">Increase in Productivity</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="700" data-from-value="" data-delimiter=","></span>
+				<span class="elementor-counter-number-suffix">%</span>
+			</div>
+		</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-03dd182 e-con-full e-flex e-con e-child" data-id="03dd182" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-243ea7b e-con-full e-flex e-con e-child" data-id="243ea7b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-c40013c elementor-widget elementor-widget-image" data-id="c40013c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="1024" height="1024" src="https://genbox.ai/wp-content/uploads/2024/04/CITYPNG.COMGaming-Controller-Joystick-3D-Buttons-PNG-1500x1500-1-1024x1024.png" class="attachment-large size-large wp-image-1453" alt="" srcset="https://genbox.ai/wp-content/uploads/2024/04/CITYPNG.COMGaming-Controller-Joystick-3D-Buttons-PNG-1500x1500-1-1024x1024.png 1024w, https://genbox.ai/wp-content/uploads/2024/04/CITYPNG.COMGaming-Controller-Joystick-3D-Buttons-PNG-1500x1500-1-300x300.png 300w, https://genbox.ai/wp-content/uploads/2024/04/CITYPNG.COMGaming-Controller-Joystick-3D-Buttons-PNG-1500x1500-1-150x150.png 150w, https://genbox.ai/wp-content/uploads/2024/04/CITYPNG.COMGaming-Controller-Joystick-3D-Buttons-PNG-1500x1500-1-768x768.png 768w, https://genbox.ai/wp-content/uploads/2024/04/CITYPNG.COMGaming-Controller-Joystick-3D-Buttons-PNG-1500x1500-1.png 1500w" sizes="(max-width: 1024px) 100vw, 1024px" />													</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-126d3de e-con-full e-flex e-con e-child" data-id="126d3de" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-a1bfa0e elementor-widget elementor-widget-counter" data-id="a1bfa0e" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-title">Content Quality:</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="1000" data-from-value="" data-delimiter=","></span>
+				<span class="elementor-counter-number-suffix">%</span>
+			</div>
+		</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b9cb5e1 e-con-full e-flex e-con e-child" data-id="b9cb5e1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-ed329de elementor-widget elementor-widget-image" data-id="ed329de" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="1024" height="1024" src="https://genbox.ai/wp-content/uploads/2024/04/—Pngtree—future-intelligent-technology-robot-ai_5766888-1024x1024.png" class="attachment-large size-large wp-image-1464" alt="" srcset="https://genbox.ai/wp-content/uploads/2024/04/—Pngtree—future-intelligent-technology-robot-ai_5766888-1024x1024.png 1024w, https://genbox.ai/wp-content/uploads/2024/04/—Pngtree—future-intelligent-technology-robot-ai_5766888-300x300.png 300w, https://genbox.ai/wp-content/uploads/2024/04/—Pngtree—future-intelligent-technology-robot-ai_5766888-150x150.png 150w, https://genbox.ai/wp-content/uploads/2024/04/—Pngtree—future-intelligent-technology-robot-ai_5766888-768x768.png 768w, https://genbox.ai/wp-content/uploads/2024/04/—Pngtree—future-intelligent-technology-robot-ai_5766888-1536x1536.png 1536w, https://genbox.ai/wp-content/uploads/2024/04/—Pngtree—future-intelligent-technology-robot-ai_5766888-2048x2048.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" />													</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9bb6619 e-con-full e-flex e-con e-child" data-id="9bb6619" data-element_type="container">
+		<div class="elementor-element elementor-element-65dca82 e-con-full e-flex e-con e-child" data-id="65dca82" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-3eaf618 e-con-full e-flex e-con e-child" data-id="3eaf618" data-element_type="container">
+				<div class="elementor-element elementor-element-765cb45 elementor-widget elementor-widget-image" data-id="765cb45" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="400" height="400" src="https://genbox.ai/wp-content/uploads/2024/04/wired-lineal-20-love-heart.gif" class="attachment-large size-large wp-image-1517" alt="" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-8a8ecf8 elementor-widget elementor-widget-heading" data-id="8a8ecf8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Elevate Your Content <br> Creation with<span style="color:#0080FF"> PixForge</h2>		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5695975 elementor-widget elementor-widget-text-editor" data-id="5695975" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<ul>
+<li><strong>Content Generation:</strong> Tailored content creation for diverse platforms.</li>
+<li><strong>Task Automation:</strong> Streamlined workflows for creative focus.</li>
+<li><strong>Writing Assistance:</strong> Support from idea generation to refinement.</li>
+<li><strong>Organization:</strong> Efficient content management for future use.</li>
+<li><strong>Analytics:</strong> Data-driven insights for optimized strategies.</li>
+<li><strong>Script Summarization:</strong> Automated summarization for easier review.</li>
+</ul>						</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-2528f26 e-con-full e-flex e-con e-child" data-id="2528f26" data-element_type="container" id="features">
+		<div class="elementor-element elementor-element-a156855 e-flex e-con-boxed e-con e-child" data-id="a156855" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-aa5eb8b e-con-full e-flex e-con e-child" data-id="aa5eb8b" data-element_type="container" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:40,&quot;end&quot;:67}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}">
+				<div class="elementor-element elementor-element-cd3b900 elementor-widget elementor-widget-text-editor" data-id="cd3b900" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<ul><li>features</li></ul>						</div>
+				</div>
+				<div class="elementor-element elementor-element-70bd3ad elementor-widget elementor-widget-heading" data-id="70bd3ad" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.9,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:39,&quot;end&quot;:69}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">How Generative Technology Works</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-db76f0d elementor-widget elementor-widget-text-editor" data-id="db76f0d" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge employs advanced NLP to automate game development tasks</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-2408b99 e-con-full e-flex e-con e-child" data-id="2408b99" data-element_type="container">
+		<div class="elementor-element elementor-element-832994a e-con-full e-flex e-con e-child" data-id="832994a" data-element_type="container" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2.4,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:46,&quot;end&quot;:65}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}">
+		<div class="elementor-element elementor-element-0306537 e-con-full e-flex e-con e-child" data-id="0306537" data-element_type="container">
+		<div class="elementor-element elementor-element-d90f941 e-con-full e-flex e-con e-child" data-id="d90f941" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-4949a33 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="4949a33" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002464.svg" class="attachment-large size-large wp-image-294" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002464.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002464.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002464.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002464.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-bedfb25 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="bedfb25" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Text-Based Asset Generation</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0438b5e animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="0438b5e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Parses descriptions, analyzes semantics, generates assets, and refines iteratively.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-11ba212 e-con-full e-flex e-con e-child" data-id="11ba212" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-92efc8e animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="92efc8e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002468.svg" class="attachment-large size-large wp-image-301" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002468.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002468.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002468.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002468.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-a6cfce4 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="a6cfce4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Bug Detection and Resolution</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f49f058 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="f49f058" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Analyzes reports, recognizes patterns, diagnoses, and suggests fixes.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-16c6ddd e-con-full e-flex e-con e-child" data-id="16c6ddd" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-36bf9c5 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="36bf9c5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="49" height="49" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002522.svg" class="attachment-large size-large wp-image-303" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002522.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002522.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002522.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002522.svg 49w" sizes="(max-width: 49px) 100vw, 49px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-eaa8a79 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="eaa8a79" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Content Curation and Summarization</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ee3f0e6 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="ee3f0e6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Extracts information, summarizes, and tailors for developers&#8217; needs.</p>						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ad357f6 e-con-full e-flex e-con e-child" data-id="ad357f6" data-element_type="container" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2.8,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:45,&quot;end&quot;:72}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}">
+		<div class="elementor-element elementor-element-8a1cce1 e-con-full e-flex e-con e-child" data-id="8a1cce1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-4cd520d animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="4cd520d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002467.svg" class="attachment-large size-large wp-image-310" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002467.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002467.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002467.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002467.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-f0b8f46 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="f0b8f46" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Automated Level Design</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7fc1038 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="7fc1038" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Understands level requirements, procedurally generates layouts, adapts dynamically.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f48b32f e-con-full e-flex e-con e-child" data-id="f48b32f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-001c231 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="001c231" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="49" height="49" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002520-1.svg" class="attachment-large size-large wp-image-311" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002520-1.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002520-1.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002520-1.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002520-1.svg 49w" sizes="(max-width: 49px) 100vw, 49px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-ef51903 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="ef51903" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Content Curation and 
+Summarization</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-016db5d animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="016db5d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Extracts information, summarizes, and tailors for developers&#8217; needs.</p>						</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-83b59b8 e-con-full e-flex e-con e-child" data-id="83b59b8" data-element_type="container">
+				<div class="elementor-element elementor-element-88483a9 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="88483a9" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:41,&quot;end&quot;:63}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Design</h2>		</div>
+				</div>
+		<div class="elementor-element elementor-element-3da7f2d e-con-full e-flex e-con e-child" data-id="3da7f2d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-c5a1dad animated-slow elementor-hidden-tablet elementor-hidden-mobile elementor-invisible elementor-widget elementor-widget-liquid" data-id="c5a1dad" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInUp&quot;}" data-widget_type="liquid.default">
+				<div class="elementor-widget-container">
+			
+    	<div class="liquid-image-area">
+	    	<div class="liquid-image" style="width:600px;">
+	    		<img decoding="async" src="https://genbox.ai/wp-content/uploads/2024/04/2-208.png" alt="">
+	    			    	</div>
+    	</div>
+
+        
+		<span style="display:none;" class="settings elementor-extra-hidden">{"plugin_url":"https:\/\/genbox.ai\/wp-content\/plugins\/elementor-liquid-hover-effect\/widgets","first_image":"https:\/\/genbox.ai\/wp-content\/uploads\/2024\/04\/2-208.png","second_image":"https:\/\/genbox.ai\/wp-content\/uploads\/2024\/04\/2-209.png","hover_effect":"default.png","width":{"unit":"px","size":600,"sizes":[]},"width_tablet":{"unit":"px","size":600,"sizes":[]},"width_mobile":{"unit":"px","size":600,"sizes":[]},"intensity":0.44,"speed":1.5,"angle":0}</span>
+
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-fb085ff elementor-hidden-desktop elementor-hidden-laptop elementor-widget elementor-widget-image" data-id="fb085ff" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="1024" height="1024" src="https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-1024x1024.png" class="attachment-large size-large wp-image-1978" alt="" srcset="https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-1024x1024.png 1024w, https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-300x300.png 300w, https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-150x150.png 150w, https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-768x768.png 768w, https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-1536x1536.png 1536w, https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" />													</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ab3bb7e e-con-full e-flex e-con e-child" data-id="ab3bb7e" data-element_type="container">
+		<div class="elementor-element elementor-element-3149ed6 e-con-full e-flex e-con e-child" data-id="3149ed6" data-element_type="container">
+				<div class="elementor-element elementor-element-5f25078 elementor-icon-list--layout-inline elementor-list-item-link-inline elementor-align-center elementor-widget elementor-widget-icon-list" data-id="5f25078" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]},&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://genbox.ai/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1717539373">		<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text"> Technology</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Unity</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Seamless</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Revolutionary</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Genbox</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text"> Technology</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Unity</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">efficiency</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Connectivity</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Seamless</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Revolutionary</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-8f63d4b e-con-full e-flex e-con e-child" data-id="8f63d4b" data-element_type="container" id="Utilities">
+		<div class="elementor-element elementor-element-09ea93d e-flex e-con-boxed e-con e-child" data-id="09ea93d" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-b45f560 e-con-full e-flex e-con e-child" data-id="b45f560" data-element_type="container" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:40,&quot;end&quot;:67}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateY_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}">
+				<div class="elementor-element elementor-element-0e4abef elementor-widget elementor-widget-text-editor" data-id="0e4abef" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<ul><li>features</li></ul>						</div>
+				</div>
+				<div class="elementor-element elementor-element-6a1e47a elementor-widget elementor-widget-heading" data-id="6a1e47a" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.9,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:39,&quot;end&quot;:69}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">How Generative Technology Works</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c129974 elementor-widget elementor-widget-text-editor" data-id="c129974" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:38,&quot;end&quot;:66}},&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge employs advanced NLP to automate game development tasks</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-313eccf e-con-full e-flex e-con e-child" data-id="313eccf" data-element_type="container">
+		<div class="elementor-element elementor-element-7fbbb58 e-con-full e-flex e-con e-child" data-id="7fbbb58" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:44,&quot;end&quot;:61}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}">
+				<div class="elementor-element elementor-element-a5ac3d9 animated-slow elementor-widget elementor-widget-image" data-id="a5ac3d9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002485.svg" class="attachment-large size-large wp-image-537" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002485.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002485.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002485.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002485.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-d9296de animated-slow elementor-widget elementor-widget-heading" data-id="d9296de" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Environment Crafting using NLP</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-bbf410e elementor-widget elementor-widget-text-editor" data-id="bbf410e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge autonomously generates detailed game environments from text, freeing developers to refine gameplay and narrative.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ca5212b e-con-full e-flex e-con e-child" data-id="ca5212b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.8,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:43,&quot;end&quot;:61}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}">
+				<div class="elementor-element elementor-element-d5c8948 animated-slow elementor-widget elementor-widget-image" data-id="d5c8948" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002481.svg" class="attachment-large size-large wp-image-541" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-e2c78df animated-slow elementor-widget elementor-widget-heading" data-id="e2c78df" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Automating Mundane 
+Tasks using AI</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a805713 elementor-widget elementor-widget-text-editor" data-id="a805713" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>GenBox automates mundane tasks, like asset creation and bug resolution, optimizing workflows and freeing developers to innovate.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-93a709d e-con-full e-flex e-con e-child" data-id="93a709d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:47,&quot;end&quot;:65}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}">
+				<div class="elementor-element elementor-element-614f3cf animated-slow elementor-widget elementor-widget-image" data-id="614f3cf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002483-1.svg" class="attachment-large size-large wp-image-548" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002483-1.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002483-1.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002483-1.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002483-1.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-d340e64 animated-slow elementor-widget elementor-widget-heading" data-id="d340e64" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Coding Aid using NLP</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b023680 elementor-widget elementor-widget-text-editor" data-id="b023680" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>GenBox provides intelligent coding aid with NLP. Developers interact naturally, speeding up the coding process with relevant suggestions and syntax corrections, even for beginners.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-607581f e-con-full e-flex e-con e-child" data-id="607581f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.8,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:43,&quot;end&quot;:61}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}">
+				<div class="elementor-element elementor-element-11946be animated-slow elementor-widget elementor-widget-image" data-id="11946be" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002481.svg" class="attachment-large size-large wp-image-541" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-5e49b85 animated-slow elementor-widget elementor-widget-heading" data-id="5e49b85" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Project Management using NLP</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6c55064 elementor-widget elementor-widget-text-editor" data-id="6c55064" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>GenBox streamlines project management with NLP, allowing natural communication for task delegation and collaboration, enhancing transparency and efficiency.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6ac7815 e-con-full e-flex e-con e-child" data-id="6ac7815" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:44,&quot;end&quot;:61}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}">
+				<div class="elementor-element elementor-element-af20077 animated-slow elementor-widget elementor-widget-image" data-id="af20077" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002481.svg" class="attachment-large size-large wp-image-541" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002481.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-19ed9fb animated-slow elementor-widget elementor-widget-heading" data-id="19ed9fb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Summarization using AI (Gaming)</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f6a4b68 elementor-widget elementor-widget-text-editor" data-id="f6a4b68" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>GenBox automates script summarization, empowering developers to grasp narrative essence swiftly for effective game design.</p>						</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-40ad1d1 e-con-full e-flex e-con e-child" data-id="40ad1d1" data-element_type="container">
+		<div class="elementor-element elementor-element-7e83a55 e-flex e-con-boxed e-con e-child" data-id="7e83a55" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-1c1b9a4 e-con-full e-flex e-con e-child" data-id="1c1b9a4" data-element_type="container" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:40,&quot;end&quot;:67}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateY_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}">
+				<div class="elementor-element elementor-element-67240e2 elementor-widget elementor-widget-heading" data-id="67240e2" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.9,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:39,&quot;end&quot;:69}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Discover the technology behind <br> <span style="color:#0080FF"> PixForge</h2>		</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-497e59d e-con-full e-flex e-con e-child" data-id="497e59d" data-element_type="container">
+				</div>
+		<div class="elementor-element elementor-element-f993c94 e-con-full e-flex e-con e-child" data-id="f993c94" data-element_type="container">
+		<div class="elementor-element elementor-element-6de6a92 e-con-full e-flex e-con e-child" data-id="6de6a92" data-element_type="container">
+		<div class="elementor-element elementor-element-78d572d e-con-full e-flex e-con e-child" data-id="78d572d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-ac7d6ea animated-slow elementor-widget elementor-widget-heading" data-id="ac7d6ea" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Innovation</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f2d5377 elementor-widget elementor-widget-text-editor" data-id="f2d5377" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>GenBox innovates education by merging AI and VR to create dynamic, immersive, and personalized learning experiences with real-time assessment and global accessibility.</p>						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-8ae7bed e-con-full e-flex e-con e-child" data-id="8ae7bed" data-element_type="container">
+		<div class="elementor-element elementor-element-136255d e-con-full e-flex e-con e-child" data-id="136255d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-2b19e56 animated-slow elementor-widget elementor-widget-heading" data-id="2b19e56" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Generative VR & AR</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a7472d3 elementor-widget elementor-widget-text-editor" data-id="a7472d3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>GenBox merges AI and VR for dynamic, immersive experiences, revolutionizing content creation and personalization for global users.</p>						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-111e43e e-con-full e-flex e-con e-child" data-id="111e43e" data-element_type="container">
+		<div class="elementor-element elementor-element-425fa02 e-con-full e-flex e-con e-child" data-id="425fa02" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-32f6b6c animated-slow elementor-widget elementor-widget-heading" data-id="32f6b6c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Marketing Materials</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cae6df7 elementor-widget elementor-widget-text-editor" data-id="cae6df7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>GenBox redefines marketing with AI and VR, offering dynamic visuals, interactive experiences, personalized messaging, and data-driven insights to engage consumers effectively.</p>						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f951a3d e-con-full e-flex e-con e-child" data-id="f951a3d" data-element_type="container">
+		<div class="elementor-element elementor-element-477766c e-con-full e-flex e-con e-child" data-id="477766c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-dade10c animated-slow elementor-widget elementor-widget-heading" data-id="dade10c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Educational Content</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9ef27c0 elementor-widget elementor-widget-text-editor" data-id="9ef27c0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge AI revolutionizes education with dynamic resources, immersive VR, personalized learning, real-time assessments, and global access, transforming learning for all.</p>						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-be9faa3 e-con-full e-flex e-con e-child" data-id="be9faa3" data-element_type="container">
+		<div class="elementor-element elementor-element-93042e2 e-con-full e-flex e-con e-child" data-id="93042e2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-f0bce9b animated-slow elementor-widget elementor-widget-heading" data-id="f0bce9b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Automation</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-8083bbc elementor-widget elementor-widget-text-editor" data-id="8083bbc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge AI automates game development tasks, optimizing workflows for stability and productivity.</p>						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-5cec563 e-con-full e-flex e-con e-child" data-id="5cec563" data-element_type="container">
+		<div class="elementor-element elementor-element-f61cc88 e-con-full e-flex e-con e-child" data-id="f61cc88" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-12632d7 animated-slow elementor-widget elementor-widget-heading" data-id="12632d7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">AI and NLP</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ca15845 elementor-widget elementor-widget-text-editor" data-id="ca15845" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge AI automates game tasks with NLP, analyzing text for asset creation, level design, bug detection, player interaction, and content curation, aiding decisions.</p>						</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-03cabff e-con-full e-flex e-con e-child" data-id="03cabff" data-element_type="container" id="final-setop">
+		<div class="elementor-element elementor-element-27b790a e-flex e-con-boxed e-con e-child" data-id="27b790a" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-019cd04 e-con-full e-flex e-con e-child" data-id="019cd04" data-element_type="container" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:40,&quot;end&quot;:67}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateY_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}">
+				<div class="elementor-element elementor-element-5266cce elementor-widget elementor-widget-text-editor" data-id="5266cce" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<ul><li>NLP</li></ul>						</div>
+				</div>
+				<div class="elementor-element elementor-element-7f3b4c5 elementor-widget elementor-widget-heading" data-id="7f3b4c5" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.9,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:39,&quot;end&quot;:69}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">NLP Revolutionizing Game
+ Development</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ee2fd98 elementor-widget elementor-widget-text-editor" data-id="ee2fd98" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge AI employs advanced NLP to automate game development tasks</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-248e4b6 e-con-full e-flex e-con e-child" data-id="248e4b6" data-element_type="container">
+		<div class="elementor-element elementor-element-e68e4a5 e-con-full e-flex e-con e-child" data-id="e68e4a5" data-element_type="container" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2.4,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:46,&quot;end&quot;:65}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}">
+		<div class="elementor-element elementor-element-c931001 e-con-full e-flex e-con e-child" data-id="c931001" data-element_type="container">
+		<div class="elementor-element elementor-element-7cb548a e-con-full e-flex e-con e-child" data-id="7cb548a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-2fb5d53 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="2fb5d53" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Frame-3.svg" class="attachment-large size-large wp-image-776" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Frame-3.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Frame-3.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Frame-3.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Frame-3.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-1ac05a9 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="1ac05a9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Environment Crafting</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-8b20f17 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="8b20f17" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge AI interprets text to generate immersive game environments, accelerating development with detailed landscapes and characters.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-dc0c789 e-con-full e-flex e-con e-child" data-id="dc0c789" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-d905431 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="d905431" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002505.svg" class="attachment-large size-large wp-image-780" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002505.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002505.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002505.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002505.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-7a9ca6f animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="7a9ca6f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Coding Assistance</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-bc57523 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="bc57523" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge AI provides intelligent coding support through NLP, expediting the coding process with relevant suggestions.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-8f68669 e-con-full e-flex e-con e-child" data-id="8f68669" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-4b4c72f animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="4b4c72f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002507.svg" class="attachment-large size-large wp-image-781" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002507.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002507.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002507.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002507.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-cf0f0e1 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="cf0f0e1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Script Summarization</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4879059 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="4879059" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge AI automates script summarization, distilling key plot points for efficient narrative design.</p>						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a2a4624 e-con-full e-flex e-con e-child" data-id="a2a4624" data-element_type="container" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2.8,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:45,&quot;end&quot;:72}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}">
+		<div class="elementor-element elementor-element-ba836aa e-con-full e-flex e-con e-child" data-id="ba836aa" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-328b4e5 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="328b4e5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Frame-6.svg" class="attachment-large size-large wp-image-787" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Frame-6.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Frame-6.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Frame-6.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Frame-6.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-e62884d animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="e62884d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Automating Tasks</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-908d668 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="908d668" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>NLP-driven automation streamlines asset creation and bug resolution, optimizing workflows for enhanced productivity</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f12c9f0 e-con-full e-flex e-con e-child" data-id="f12c9f0" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-7add003 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="7add003" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="48" height="48" src="https://genbox.ai/wp-content/uploads/2024/04/Group-1000002506.svg" class="attachment-large size-large wp-image-783" alt="" srcset="https://genbox.ai/wp-content/uploads//2024/04/Group-1000002506.svg 150w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002506.svg 300w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002506.svg 1024w, https://genbox.ai/wp-content/uploads//2024/04/Group-1000002506.svg 48w" sizes="(max-width: 48px) 100vw, 48px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-a90cc24 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="a90cc24" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Project Management</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-fe44ce5 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="fe44ce5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>NLP-based tools simplify project tasks, monitor deadlines, and facilitate seamless collaboration.</p>						</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6268a26 e-con-full e-flex e-con e-child" data-id="6268a26" data-element_type="container">
+				<div class="elementor-element elementor-element-5bb0d98 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="5bb0d98" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:41,&quot;end&quot;:63}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">PixForge AI</h2>		</div>
+				</div>
+		<div class="elementor-element elementor-element-f5f5c59 e-con-full e-flex e-con e-child" data-id="f5f5c59" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-ff47a8a animated-slow elementor-hidden-tablet elementor-hidden-mobile elementor-invisible elementor-widget elementor-widget-liquid" data-id="ff47a8a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInUp&quot;}" data-widget_type="liquid.default">
+				<div class="elementor-widget-container">
+			
+    	<div class="liquid-image-area">
+	    	<div class="liquid-image" style="width:600px;">
+	    		<img decoding="async" src="https://genbox.ai/wp-content/uploads/2024/04/2-208-1-scaled.jpg" alt="">
+	    			    	</div>
+    	</div>
+
+        
+		<span style="display:none;" class="settings elementor-extra-hidden">{"plugin_url":"https:\/\/genbox.ai\/wp-content\/plugins\/elementor-liquid-hover-effect\/widgets","first_image":"https:\/\/genbox.ai\/wp-content\/uploads\/2024\/04\/2-208-1-scaled.jpg","second_image":"https:\/\/genbox.ai\/wp-content\/uploads\/2024\/04\/2-209-1-scaled.jpg","hover_effect":"default.png","width":{"unit":"px","size":600,"sizes":[]},"width_tablet":{"unit":"px","size":600,"sizes":[]},"width_mobile":{"unit":"px","size":600,"sizes":[]},"intensity":0.44,"speed":1.5,"angle":0}</span>
+
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-af068b4 elementor-hidden-desktop elementor-hidden-laptop elementor-widget elementor-widget-image" data-id="af068b4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="1024" height="1024" src="https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-1-1024x1024.png" class="attachment-large size-large wp-image-1982" alt="" srcset="https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-1-1024x1024.png 1024w, https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-1-300x300.png 300w, https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-1-150x150.png 150w, https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-1-768x768.png 768w, https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-1-1536x1536.png 1536w, https://genbox.ai/wp-content/uploads/2024/04/alihyder04_Craft_impeccably_detailed_4K_mini_robot_visuals_meti_7229e17c-631d-456b-a98a-841bf97bbc15-1.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" />													</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6717d3d e-con-full e-flex e-con e-child" data-id="6717d3d" data-element_type="container">
+		<div class="elementor-element elementor-element-1ba49e8 e-con-full e-flex e-con e-child" data-id="1ba49e8" data-element_type="container">
+				<div class="elementor-element elementor-element-5a8bb44 elementor-icon-list--layout-inline elementor-list-item-link-inline elementor-align-center elementor-widget elementor-widget-icon-list" data-id="5a8bb44" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]},&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text"> Technology</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Unity</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Seamless</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Revolutionary</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Genbox</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text"> Technology</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Unity</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">efficiency</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Connectivity</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Seamless</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52" height="28" viewBox="0 0 52 28" fill="none"><path d="M29.4141 28L51.4141 14L29.4141 0V28Z" fill="white"></path><path d="M22 28L0 14L22 0V28Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Revolutionary</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-07d4c24 e-con-full e-flex e-con e-child" data-id="07d4c24" data-element_type="container">
+		<div class="elementor-element elementor-element-315bebc e-flex e-con-boxed e-con e-child" data-id="315bebc" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-0c8eca7 e-con-full e-flex e-con e-child" data-id="0c8eca7" data-element_type="container">
+				<div class="elementor-element elementor-element-303a701 elementor-widget elementor-widget-heading" data-id="303a701" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.9,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:39,&quot;end&quot;:69}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;]}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Impact on the
+Gaming  <span style="color:#0080FF">  Industry</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ef9953a elementor-widget elementor-widget-text-editor" data-id="ef9953a" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Incorporating PixForge AI into Unreal Engine and Unity workflows enhances productivity, streamlines development, and refines games. GenBox swiftly generates immersive environments, automates tasks, provides coding assistance, offers project management tools, and automates script summarization. Developers save time, focus on creativity, and refine game design efficiently with GenBox.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-5c2b4b0 e-con-full e-flex e-con e-child" data-id="5c2b4b0" data-element_type="container">
+		<div class="elementor-element elementor-element-3fc4831 e-con-full e-flex e-con e-child" data-id="3fc4831" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-cc3e955 elementor-widget elementor-widget-counter" data-id="cc3e955" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-title">Experience  Growth</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="200" data-from-value="" data-delimiter=","></span>
+				<span class="elementor-counter-number-suffix">X</span>
+			</div>
+		</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-79f15fd e-con-full e-flex e-con e-child" data-id="79f15fd" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-e0de254 e-con-full e-flex e-con e-child" data-id="e0de254" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-73c7772 elementor-widget elementor-widget-image" data-id="73c7772" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="749" height="701" src="https://genbox.ai/wp-content/uploads/2024/04/image-4.png" class="attachment-large size-large wp-image-872" alt="" srcset="https://genbox.ai/wp-content/uploads/2024/04/image-4.png 749w, https://genbox.ai/wp-content/uploads/2024/04/image-4-300x281.png 300w" sizes="(max-width: 749px) 100vw, 749px" />													</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-42b7425 e-con-full e-flex e-con e-child" data-id="42b7425" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-439d5e5 e-con-full e-flex e-con e-child" data-id="439d5e5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-bb827f1 elementor-widget elementor-widget-image" data-id="bb827f1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="140" height="121" src="https://genbox.ai/wp-content/uploads/2024/04/image-3.png" class="attachment-large size-large wp-image-882" alt="" />													</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7cb8702 e-con-full e-flex e-con e-child" data-id="7cb8702" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-e2e9612 elementor-widget elementor-widget-counter" data-id="e2e9612" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-title">Player Engagement  Increased</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="500" data-from-value="" data-delimiter=","></span>
+				<span class="elementor-counter-number-suffix">%</span>
+			</div>
+		</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-8611cbd e-con-full e-flex e-con e-child" data-id="8611cbd" data-element_type="container">
+		<div class="elementor-element elementor-element-135f05d e-con-full e-flex e-con e-child" data-id="135f05d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-2ea3194 e-flex e-con-boxed e-con e-child" data-id="2ea3194" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6cab630 e-con-full e-flex e-con e-child" data-id="6cab630" data-element_type="container">
+				<div class="elementor-element elementor-element-9e3eba7 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image" data-id="9e3eba7" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="1024" height="1018" style="
+													width: 100px; 
+													height: 100px;
+												" src="./assets/logo.png" class="attachment-large size-large wp-image-1611" alt="" srcset="./assets/logo.png" sizes="(max-width: 1024px) 100vw, 1024px" />													</div>
+				</div>
+				<div class="elementor-element elementor-element-dd8d591 elementor-widget elementor-widget-text-editor" data-id="dd8d591" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>PixForge harnesses the scalability and computational power of cloud infrastructure to support AI model training, inference, and real-time analytics, enabling high-performance and cost-effective solutions.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-22e1c51 e-con-full e-flex e-con e-child" data-id="22e1c51" data-element_type="container">
+				<div class="elementor-element elementor-element-077c3bd elementor-widget elementor-widget-heading" data-id="077c3bd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Explore</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7692f46 elementor-widget elementor-widget-heading" data-id="7692f46" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="" target="_blank">Home</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-49922d2 elementor-widget elementor-widget-heading" data-id="49922d2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="/#features" target="_blank">Features</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-46f34a4 elementor-widget elementor-widget-heading" data-id="46f34a4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-adc5ba0 elementor-widget elementor-widget-heading" data-id="adc5ba0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="#Utilities">Utilities</a></h2>		</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-c30d63c e-con-full e-flex e-con e-child" data-id="c30d63c" data-element_type="container">
+				<div class="elementor-element elementor-element-77f570a elementor-widget elementor-widget-heading" data-id="77f570a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Links</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b56a681 elementor-widget elementor-widget-heading" data-id="b56a681" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="https://genbox.ai/wp-content/uploads/2024/04/GenBox-WhitePaper.pdf" target="_blank">Buy $PFAI</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1db6dad elementor-widget elementor-widget-heading" data-id="1db6dad" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="https://genbox.ai/wp-content/uploads/2024/04/Genbox-PitchDeck.pdf" target="_blank">Chart</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-63970c7 elementor-widget elementor-widget-heading" data-id="63970c7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="http://t.me/" target="_blank">telegram</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-8872e6e elementor-widget elementor-widget-heading" data-id="8872e6e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="http://Twitter.com/" target="_blank">twitter (x)</a></h2>		</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-153b822 e-con-full e-flex e-con e-child" data-id="153b822" data-element_type="container">
+		<div class="elementor-element elementor-element-1ab5d9b e-flex e-con-boxed e-con e-child" data-id="1ab5d9b" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2a97531 elementor-widget elementor-widget-heading" data-id="2a97531" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Subscribe to <br> our newsletter</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3f8028d elementor-widget elementor-widget-image" data-id="3f8028d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img loading="lazy" loading="lazy" decoding="async" width="400" height="400" src="https://genbox.ai/wp-content/uploads/2024/04/system-solid-46-notification-bell-1.gif" class="attachment-large size-large wp-image-1036" alt="" />													</div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-b9e77cc elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="b9e77cc" data-element_type="widget" data-settings="{&quot;button_width&quot;:&quot;30&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width_mobile&quot;:&quot;33&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor-pro - v3.16.0 - 12-09-2023 */
+.elementor-button.elementor-hidden,.elementor-hidden{display:none}.e-form__step{width:100%}.e-form__step:not(.elementor-hidden){display:flex;flex-wrap:wrap}.e-form__buttons{flex-wrap:wrap}.e-form__buttons,.e-form__buttons__wrapper{display:flex}.e-form__indicators{display:flex;justify-content:space-between;align-items:center;flex-wrap:nowrap;font-size:13px;margin-bottom:var(--e-form-steps-indicators-spacing)}.e-form__indicators__indicator{display:flex;flex-direction:column;align-items:center;justify-content:center;flex-basis:0;padding:0 var(--e-form-steps-divider-gap)}.e-form__indicators__indicator__progress{width:100%;position:relative;background-color:var(--e-form-steps-indicator-progress-background-color);border-radius:var(--e-form-steps-indicator-progress-border-radius);overflow:hidden}.e-form__indicators__indicator__progress__meter{width:var(--e-form-steps-indicator-progress-meter-width,0);height:var(--e-form-steps-indicator-progress-height);line-height:var(--e-form-steps-indicator-progress-height);padding-right:15px;border-radius:var(--e-form-steps-indicator-progress-border-radius);background-color:var(--e-form-steps-indicator-progress-color);color:var(--e-form-steps-indicator-progress-meter-color);text-align:right;transition:width .1s linear}.e-form__indicators__indicator:first-child{padding-left:0}.e-form__indicators__indicator:last-child{padding-right:0}.e-form__indicators__indicator--state-inactive{color:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-inactive [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-inactive-secondary-color,#fff)}.e-form__indicators__indicator--state-inactive object,.e-form__indicators__indicator--state-inactive svg{fill:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-active{color:var(--e-form-steps-indicator-active-primary-color,#39b54a);border-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active object,.e-form__indicators__indicator--state-active svg{fill:var(--e-form-steps-indicator-active-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed{color:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator--state-completed [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator__label{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator--shape-none{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a);background-color:initial}.e-form__indicators__indicator--state-completed object,.e-form__indicators__indicator--state-completed svg{fill:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator__icon{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);font-size:var(--e-form-steps-indicator-icon-size);border-width:1px;border-style:solid;display:flex;justify-content:center;align-items:center;overflow:hidden;margin-bottom:10px}.e-form__indicators__indicator__icon img,.e-form__indicators__indicator__icon object,.e-form__indicators__indicator__icon svg{width:var(--e-form-steps-indicator-icon-size);height:auto}.e-form__indicators__indicator__icon .e-font-icon-svg{height:1em}.e-form__indicators__indicator__number{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);border-width:1px;border-style:solid;display:flex;justify-content:center;align-items:center;margin-bottom:10px}.e-form__indicators__indicator--shape-circle{border-radius:50%}.e-form__indicators__indicator--shape-square{border-radius:0}.e-form__indicators__indicator--shape-rounded{border-radius:5px}.e-form__indicators__indicator--shape-none{border:0}.e-form__indicators__indicator__label{text-align:center}.e-form__indicators__indicator__separator{width:100%;height:var(--e-form-steps-divider-width);background-color:#babfc5}.e-form__indicators--type-icon,.e-form__indicators--type-icon_text,.e-form__indicators--type-number,.e-form__indicators--type-number_text{align-items:flex-start}.e-form__indicators--type-icon .e-form__indicators__indicator__separator,.e-form__indicators--type-icon_text .e-form__indicators__indicator__separator,.e-form__indicators--type-number .e-form__indicators__indicator__separator,.e-form__indicators--type-number_text .e-form__indicators__indicator__separator{margin-top:calc(var(--e-form-steps-indicator-padding, 30px) / 2 - var(--e-form-steps-divider-width, 1px) / 2)}.elementor-field-type-hidden{display:none}.elementor-field-type-html{display:inline-block}.elementor-login .elementor-lost-password,.elementor-login .elementor-remember-me{font-size:.85em}.elementor-field-type-recaptcha_v3 .elementor-field-label{display:none}.elementor-field-type-recaptcha_v3 .grecaptcha-badge{z-index:1}.elementor-button .elementor-form-spinner{order:3}.elementor-form .elementor-button>span{display:flex;justify-content:center;align-items:center}.elementor-form .elementor-button .elementor-button-text{white-space:normal;flex-grow:0}.elementor-form .elementor-button svg{height:auto}.elementor-form .elementor-button .e-font-icon-svg{height:1em}.elementor-select-wrapper .select-caret-down-wrapper{position:absolute;top:50%;transform:translateY(-50%);inset-inline-end:10px;pointer-events:none;font-size:11px}.elementor-select-wrapper .select-caret-down-wrapper svg{display:unset;width:1em;aspect-ratio:unset;fill:currentColor}.elementor-select-wrapper .select-caret-down-wrapper i{font-size:19px;line-height:2}.elementor-select-wrapper.remove-before:before{content:""!important}</style>		<form class="elementor-form" method="post" name="New Form">
+			<input type="hidden" name="post_id" value="10"/>
+			<input type="hidden" name="form_id" value="b9e77cc"/>
+			<input type="hidden" name="referer_title" value="" />
+
+							<input type="hidden" name="queried_id" value="10"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-70 elementor-sm-66 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								Email							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-lg  elementor-field-textual" placeholder="Email" required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-30 e-form__buttons elementor-sm-33">
+					<button type="submit" class="elementor-button elementor-size-lg">
+						<span >
+															<span class="elementor-align-icon-right elementor-button-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.38281 15.1252C3.38281 15.8213 3.92381 16.3856 4.59116 16.3856H23.8955C23.792 16.5725 23.6636 16.7484 23.5104 16.9083L15.8206 24.9297C15.3486 25.4219 15.3486 26.22 15.8206 26.7123C16.2924 27.2045 17.0576 27.2045 17.5294 26.7123L27.7826 16.017C28.2545 15.5248 28.2545 14.7267 27.7826 14.2345L17.5292 3.53909C17.0573 3.04686 16.2922 3.04686 15.8203 3.53909C15.3485 4.03133 15.3485 4.8294 15.8203 5.32164L23.5104 13.3432C23.6633 13.5028 23.7914 13.6783 23.8949 13.8648H4.59116C3.92381 13.8647 3.38281 14.4291 3.38281 15.1252Z" fill="#CFCFCF"></path></svg>																			<span class="elementor-screen-only">Submit</span>
+																	</span>
+																				</span>
+					</button>
+				</div>
+			</div>
+		</form>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-cb7aaab e-flex e-con-boxed e-con e-child" data-id="cb7aaab" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-df637ff elementor-widget elementor-widget-heading" data-id="df637ff" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Innovate. Collaborate. Dominate</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-983cb92 elementor-widget elementor-widget-heading" data-id="983cb92" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">contact@pixforge.ai</h2>		</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-ce3e82d e-flex e-con-boxed e-con e-child" data-id="ce3e82d" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-a20ad1c elementor-widget elementor-widget-heading" data-id="a20ad1c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">All rights reserved.  Copyright © pixforge.ai </h2>		</div>
+				</div>
+		<div class="elementor-element elementor-element-4e674f3 e-con-full e-flex e-con e-child" data-id="4e674f3" data-element_type="container">
+				<div class="elementor-element elementor-element-89c71a4 elementor-widget elementor-widget-heading" data-id="89c71a4" data-element_type="widget" data-widget_type="heading.default">
+				</div>
+				<div class="elementor-element elementor-element-9fe4526 elementor-widget elementor-widget-heading" data-id="9fe4526" data-element_type="widget" data-widget_type="heading.default">
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+
+		
+		
+		
+		
+	</article>
+
+	
+		
+			</div>
+
+	</main>
+
+	</div>
+
+<link rel='stylesheet' id='ep-image-hover-effects-css' href='https://genbox.ai/wp-content/plugins/bdthemes-element-pack/assets/css/ep-image-hover-effects.css?ver=7.7.2' media='all' />
+<link rel='stylesheet' id='ep-advanced-button-css' href='https://genbox.ai/wp-content/plugins/bdthemes-element-pack/assets/css/ep-advanced-button.css?ver=7.7.2' media='all' />
+<link rel='stylesheet' id='style-css' href='https://genbox.ai/wp-content/plugins/elementor-liquid-hover-effect/widgets/css/style.css?ver=6.5.5' media='all' />
+<link rel='stylesheet' id='e-animations-css' href='https://genbox.ai/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.21.0' media='all' />
+<script src="https://genbox.ai/wp-content/uploads/wpmss/wpmssab.min.js?ver=1719063136" id="wpmssab-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/mousewheel-smooth-scroll/js/SmoothScroll.min.js?ver=1.4.10" id="SmoothScroll-js"></script>
+<script src="https://genbox.ai/wp-content/uploads/wpmss/wpmss.min.js?ver=1719063136" id="wpmss-js"></script>
+<script id="ct-scripts-js-extra">
+var ct_localizations = {"ajax_url":"https:\/\/genbox.ai\/wp-admin\/admin-ajax.php","public_url":"https:\/\/genbox.ai\/wp-content\/themes\/blocksy\/static\/bundle\/","rest_url":"https:\/\/genbox.ai\/wp-json\/","search_url":"https:\/\/genbox.ai\/search\/QUERY_STRING\/","show_more_text":"Show more","more_text":"More","search_live_results":"Search results","search_live_no_result":"No results","search_live_one_result":"You got %s result. Please press Tab to select it.","search_live_many_results":"You got %s results. Please press Tab to select one.","expand_submenu":"Expand dropdown menu","collapse_submenu":"Collapse dropdown menu","dynamic_js_chunks":[{"id":"blocksy_sticky_header","selector":"header [data-sticky]","url":"https:\/\/genbox.ai\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/sticky.js?ver=2.0.38"}],"dynamic_styles":{"lazy_load":"https:\/\/genbox.ai\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-styles.min.css?ver=2.0.38","search_lazy":"https:\/\/genbox.ai\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-search-styles.min.css?ver=2.0.38","back_to_top":"https:\/\/genbox.ai\/wp-content\/themes\/blocksy\/static\/bundle\/back-to-top.min.css?ver=2.0.38"},"dynamic_styles_selectors":[{"selector":".ct-header-cart, #woo-cart-panel","url":"https:\/\/genbox.ai\/wp-content\/themes\/blocksy\/static\/bundle\/cart-header-element-lazy.min.css?ver=2.0.38"},{"selector":".flexy","url":"https:\/\/genbox.ai\/wp-content\/themes\/blocksy\/static\/bundle\/flexy.min.css?ver=2.0.38"},{"selector":"#account-modal","url":"https:\/\/genbox.ai\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-modal-lazy.min.css?ver=2.0.38"},{"selector":".ct-header-account","url":"https:\/\/genbox.ai\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-dropdown-lazy.min.css?ver=2.0.38"}]};
+</script>
+<script src="https://genbox.ai/wp-content/themes/blocksy/static/bundle/main.js?ver=2.0.38" id="ct-scripts-js"></script>
+<script src="https://genbox.ai/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://genbox.ai/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="bdt-uikit-js-extra">
+var element_pack_ajax_login_config = {"ajaxurl":"https:\/\/genbox.ai\/wp-admin\/admin-ajax.php","language":"en","loadingmessage":"Sending user info, please wait...","unknownerror":"Unknown error, make sure access is correct!"};
+var ElementPackConfig = {"ajaxurl":"https:\/\/genbox.ai\/wp-admin\/admin-ajax.php","nonce":"977943e63a","data_table":{"language":{"sLengthMenu":"Show _MENU_ Entries","sInfo":"Showing _START_ to _END_ of _TOTAL_ entries","sSearch":"Search :","sZeroRecords":"No matching records found","oPaginate":{"sPrevious":"Previous","sNext":"Next"}}},"contact_form":{"sending_msg":"Sending message please wait...","captcha_nd":"Invisible captcha not defined!","captcha_nr":"Could not get invisible captcha response!"},"mailchimp":{"subscribing":"Subscribing you please wait..."},"search":{"more_result":"More Results","search_result":"SEARCH RESULT","not_found":"not found"},"elements_data":{"sections":[],"columns":[],"widgets":[]}};
+</script>
+<script src="https://genbox.ai/wp-content/plugins/bdthemes-element-pack/assets/js/bdt-uikit.min.js?ver=3.17.11" id="bdt-uikit-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.21.0" id="elementor-webpack-runtime-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.21.0" id="elementor-frontend-modules-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="https://genbox.ai/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1520,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.21.0","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"container_grid":true,"theme_builder_v2":true,"home_screen":true,"ai-layout":true,"landing-pages":true,"page-transitions":true,"notes":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/genbox.ai\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop"],"viewport_laptop":1520,"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":10,"title":"Genbox%20%E2%80%93%20Lower%20the%20entry%20to%20game%20development%20utilizing%20NLP%2C%20AI%20and%20generation%20algorithms.","excerpt":"","featuredImage":false}};
+</script>
+<script src="https://genbox.ai/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.21.0" id="elementor-frontend-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/bdthemes-element-pack/assets/js/modules/ep-wrapper-link.min.js?ver=7.7.2" id="ep-wrapper-link-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1" id="jquery-numerator-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/elementor-liquid-hover-effect/widgets/js/three.min.js?ver=1.0.0" id="three-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/bdthemes-element-pack/assets/vendor/js/gsap.min.js?ver=3.12.2" id="gsap-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/elementor-liquid-hover-effect/widgets/js/hover-effect.umd.js?ver=1.0.0" id="hover-effect-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/elementor-liquid-hover-effect/widgets/js/app.js?ver=1.0.0" id="app-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/bdthemes-element-pack/assets/js/common/helper.min.js?ver=7.7.2" id="element-pack-helper-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.16.0" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://genbox.ai/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script src="https://genbox.ai/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script src="https://genbox.ai/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="https://genbox.ai/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script src="https://genbox.ai/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/genbox.ai\/wp-admin\/admin-ajax.php","nonce":"e5cd8b8ad3","urls":{"assets":"https:\/\/genbox.ai\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/genbox.ai\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/genbox.ai\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://genbox.ai/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.16.0" id="elementor-pro-frontend-js"></script>
+<script src="https://genbox.ai/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.16.0" id="pro-elements-handlers-js"></script>
+<script id="sky-elementor-addons-js-js-extra">
+var Sky_AddonsFrontendConfig = {"ajaxurl":"https:\/\/genbox.ai\/wp-admin\/admin-ajax.php","nonce":"ad886fe760"};
+</script>
+<script src="https://genbox.ai/wp-content/plugins/sky-elementor-addons/assets/js/sky-addons.min.js?ver=2.5.1" id="sky-elementor-addons-js-js"></script>
+
+</body>
+</html>
+
+<!-- Cached by WP-Optimize - https://getwpo.com - Last modified: December 22, 2024 5:56 pm (UTC:0) -->
